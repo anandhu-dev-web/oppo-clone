@@ -227,9 +227,9 @@ footer .top-footer{
 }
 footer .top-footer::after{
     content: '';
-    background-color: gray;
+    background-color: rgba(179, 179, 179, 0.484);
     position: absolute;
-    height: 0.5px;
+    height: 0.1px;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -253,4 +253,51 @@ footer .top-footer::after{
 }
 .copy-right-area li{
     display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+}
+.copy-right-area li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: 500;
+}
+.copy-right-area li a:hover{
+    color:white;
+}
+.robot-icon img{
+    width: 34px;
+}
+.back-to-top{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: gray;
+}
+.oppo-contact ul{
+    list-style: none;
+    margin: 0;
+}
+.oppo-contact ul li{
+    display: inline-block;
+    margin: 5px;
+    font-size: 15px;
+}
+.oppo-contact ul li svg:hover{
+    cursor: pointer;
+    color: white;
+}
+.oppo-contact ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.oppo-contact ul li a::after{
+    content: '';
+    background-color: rgb(179, 179, 179);
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
