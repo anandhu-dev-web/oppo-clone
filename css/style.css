@@ -126,27 +126,131 @@ header{
 }
 .feature-tab-text a:hover::after{
     width: 0%;
-    transition: all ease 0.09s;
+    transition: all ease 0.9s;
 }
 .feature-tab-text a::after{
     position: absolute;
     content: '';
-    height: 2px;
+    height: 1px;
     width:100%;
     right: 0;
-    bottom: 5px;
+    bottom: -1%;
     background-color: black;
+    transition: all ease 0.11s;
 }
 .feature-tab-text a::before{
     position:absolute;
     content: '';
-    height: 2px;
+    height: 1px;
     width:0%;
     left: 0;
-    bottom: 5px;
+    bottom: -1%;
     background-color: rgb(0, 0, 0);
+    transition:all ease 0.9s;
 }
 .feature-tab-text a:hover::before{
     width: 100%;
-    transition:all ease 1s;
+    transition:all ease 1.5s;
+}
+.home-featured-products-wrapper{
+    position: relative;
+}
+.offers-text-bg{
+    background-color: rgb(246 246 246);
+}
+.zoom-in-animation img{
+    cursor: pointer;
+    transform: 100%;
+    transition: all 0.3s;
+}
+.zoom-in-animation:hover img{
+    transform: scale(110%);
+    transition: all 0.3s;
+}
+.zoom-in-animation svg{
+    transform: translateX(25px);
+    transition: all 0.3s;
+}
+.zoom-in-animation:hover svg{
+    transform: translateX(35px);
+    transition: all 0.3s;
+}
+.explore-oppo{
+    background-color: rgb(224 232 234);
+}
+.oppo-support-links{
+    list-style: none;
+    padding: 0;
+}
+.oppo-support-links a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(62, 62, 62);
+    font-size: 17px;
+}
+.oppo-support-links li{
+    border-bottom: 1px solid rgb(223, 223, 223);
+    cursor: pointer;
+}
+.oppo-support-links span{
+    position: relative;
+}
+.oppo-support-links span::after{
+    content: '';
+    position: absolute;
+    height: .5px;
+    left: 0;
+    width: 0%;
+    bottom: -1px;
+    background-color: black;
+    transition: all 0.3s;
+}
+.oppo-support-links li:hover span::after{
+    width: 100%;
+    transition: all 0.3s;
+}
+.oppo-support-links svg{
+    transform: translateX(-20px);
+    transition: all 0.3s;
+}
+.oppo-support-links li:hover svg{
+    transform: translateX(0px);
+    transition: all 0.3s;
+}
+footer{
+    background-color: black;
+    color: gray;
+}
+footer .top-footer{
+    font-size: 12px;
+    position: relative;
+}
+footer .top-footer::after{
+    content: '';
+    background-color: gray;
+    position: absolute;
+    height: 0.5px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.footer-links dl{
+    font-size: 16px;
+}
+.footer-links dl dt{
+    color: white;
+}
+.footer-links dd{
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.footer-links dd:hover{
+    color: white;
+}
+.copy-right-area{
+    list-style: none;
+}
+.copy-right-area li{
+    display: inline-block;
 }
