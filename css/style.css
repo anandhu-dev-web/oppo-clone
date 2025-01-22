@@ -131,20 +131,20 @@ header{
 .feature-tab-text a::after{
     position: absolute;
     content: '';
-    height: 1px;
+    height: .5px;
     width:100%;
     right: 0;
-    bottom: -1%;
+    top: 90%;
     background-color: black;
     transition: all ease 0.11s;
 }
 .feature-tab-text a::before{
     position:absolute;
     content: '';
-    height: 1px;
+    height: .5px;
     width:0%;
     left: 0;
-    bottom: -1%;
+    top: 90%;
     background-color: rgb(0, 0, 0);
     transition:all ease 0.9s;
 }
